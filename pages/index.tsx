@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import type { NextPage } from 'next'
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div>
       <Head>
@@ -11,11 +12,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p className="text-5xl text-cyan-900">Senai-Website</p>
+        <p className="text-5xl text-cyan-900">Nextjs + Typescript + Tailwindcss Template</p>
         <ul className="list-disc p-10 text-xl">
-          <li className="">Conectar com o Firebase</li>
+          <li className="">Just do it.</li>
         </ul>
       </main>
     </div>
   )
 }
+
+export default Home
